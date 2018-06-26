@@ -34,10 +34,21 @@
                     </div>
                 </div>
                     <h4 class="card-title">Informações gerais</h4>
-					
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="nome">
+
+					<div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="nome">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sexo">Sexo</label>
+                            <select class="form-control" name="sexo" id="sexo">
+                            <option value="homem">Masculino</option>
+                            <option value="mulher">Femenino</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="row">
                     	<div class="col">
@@ -59,7 +70,7 @@
                     	<div class="col">
                     		<div class="form-group">
                     			<label for="estado">Estado:</label>
-                    			<select class="form-control" name="estado"> 
+                    			<select class="form-control" name="estado" id="estado"> 
 							    <option value="ac">Acre</option> 
 							    <option value="al">Alagoas</option> 
 							    <option value="am">Amazonas</option> 
@@ -134,8 +145,8 @@
                         </div> 
                     </div>
                     <div class="form-group">
-                        <label for="resumo">Objetivo</label>
-                        <textarea class="form-control" name="resumo" id="resumo"></textarea>
+                        <label for="objetivo">Objetivo</label>
+                        <textarea class="form-control" name="objetivo" id="objetivo"></textarea>
                     </div>
                 </div>
 
@@ -153,7 +164,7 @@
                 
                 <div class="card-footer">
                     <button class="btn-primary" type="submit">Gerar meu currículo</button>
-                    <button class="btn-default" type="reset">Limpar campos</button>
+                    <button class="btn-secondary" type="reset">Limpar dados</button>
                 </div>
             </div>
         </form>
