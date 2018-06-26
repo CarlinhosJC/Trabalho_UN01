@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Gerador de Currículo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 	
 </head>
 <body>
@@ -39,7 +40,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="nome">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome">
                             </div>
                         </div>
                         <div class="form-group">
@@ -55,16 +56,16 @@
                     		<div class="form-group">                    			
                     			<label for="nascimento">Nascimento</label>
                     			<div class="form-control">
-                    			<input type="text" name="dia" id="dia" size="2" maxlength="2" value="dd"> 
-								<input type="text" name="mes" id="mes" size="2" maxlength="2" value="mm"> 
-								<input type="text" name="ano" id="ano" size="4" maxlength="4" value="aaaa">	
+                    			<input type="text" name="dia" id="dia" size="2" maxlength="2" placeholder="dd"> 
+								<input type="text" name="mes" id="mes" size="2" maxlength="2" placeholder="mm"> 
+								<input type="text" name="ano" id="ano" size="4" maxlength="4" placeholder="aaaa">	
 								</div>						
                     		</div>
                     	</div>
                     	<div class="col">
                     		<div class="form-group">
                     			<label for="cidade">Cidade</label>
-                    			<input type="text" class="form-control" name="cidade" id="cidade">
+                    			<input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade onde mora">
                     		</div>
                     	</div>
                     	<div class="col">
@@ -106,7 +107,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="cargo">Cargo pretendido</label>
-                                <input type="text" class="form-control" name="cargo" id="cargo">
+                                <input type="text" class="form-control" name="cargo" id="cargo" placeholder="Ou deixe em branco!">
                             </div>
                         </div>
                         <div class="col">
@@ -120,13 +121,13 @@
                     	<div class="col">
                     		<div class="form-group">
                         		<label for="endereco">Endereço</label>
-                        		<input type="text" class="form-control" name="endereco" id="endereco">
+                        		<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua onde mora">
                     		</div>
                     	</div>
                     	<div>
                     		<div>
                     			<label for="numero">Numero</label>
-                    			<input type="text" class="form-control" name="numero" id="numero">
+                    			<input type="text" class="form-control" name="numero" id="numero" placeholder="Numero da casa/apartamento etc">
                     		</div>
                     	</div>
                     </div>	
@@ -134,33 +135,31 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control" name="telefone" id="telefone">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone para contato">
                             </div>
                         </div> 
                         <div class="col">
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" name="email" id="email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail para contato">
                             </div>
                         </div> 
                     </div>
                     <div class="form-group">
                         <label for="objetivo">Objetivo</label>
-                        <textarea class="form-control" name="objetivo" id="objetivo"></textarea>
+                        <textarea class="form-control" name="objetivo" id="objetivo" placeholder="Fale sobre você e seu objetivo dentro da empresa"></textarea>
                     </div>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" id="div-formacoes">
                     <h4 class="card-title">Formação</h4>
-                    <button class="btn-sm" id="btn-adicionar-formacao" title="Adicionar formação">Adicionar formação</button>
+                    <button class="btn-sm" id="adicionar-formacao" title="Adicionar formação">Adicionar formação</button>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" id="div-experiencias">
                     <h4 class="card-title">Experiência</h4>
-                    <button class="btn-sm" id="btn-adicionar-experiencia" title="Adicionar experiência">Adicionar experiência</button>
-                </div>
-
-                
+                    <button class="btn-sm" id="adicionar-experiencia" title="Adicionar experiência">Adicionar experiência</button>
+                </div>                
                 
                 <div class="card-footer">
                     <button class="btn-primary" type="submit">Gerar meu currículo</button>
@@ -168,7 +167,6 @@
                 </div>
             </div>
         </form>
-    </main>  
-  
+    </main> 
 </body>
 </html>
