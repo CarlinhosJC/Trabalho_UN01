@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Modelo 1 | Moderno</title>
@@ -15,7 +16,7 @@
                     <li><img src="imagens/email.png" alt="Icone email" height="20" width="20"><?= $dados['email']; ?></li>
                     <li><img src="imagens/telefone.png" alt="Icone telefone" height="20" width="20"><?= $dados['telefone']; ?></li>
                     <li>Nasceu:<?= $dados['dia']; ?>/<?= $dados['mes']; ?>/<?= $dados['ano']; ?></li>
-                    <li><?= $dados['cargo']; ?></li>
+                    <li>Cargo pretendido:<?= $dados['cargo']; ?></li>
                 </ul>
             </div>
         </section>

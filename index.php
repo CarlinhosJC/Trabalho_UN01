@@ -8,7 +8,7 @@
     <script src="js/index.js"></script>
 	
 </head>
-<body>
+<body style="background-color: #E0FFFF">
 	<img src="imagens/cabecalho.png">
     
     <main class="container" style="margin-top:30px">
@@ -21,14 +21,14 @@
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo1" value="exemplo1" checked><img src="imagens/modelo-moderno.png" alt="Modelo 01" width="300" height="200"> Exemplo 1 || Moderno
+                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo1" value="exemplo1" checked><img src="imagens/modelo-moderno.png" alt="Modelo 01" width="300" height="200"> Exemplo 1 | Moderno
                                 </label>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo2" value="exemplo2"><img src="imagens/modelo-simples.png" alt="Modelo 02" width="300" height="200"> Exemplo 2 || Simples
+                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo2" value="exemplo2"><img src="imagens/modelo-simples.png" alt="Modelo 02" width="300" height="200"> Exemplo 2 | Simples
                                 </label>
                             </div>
                         </div>                        
@@ -40,7 +40,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -56,16 +56,16 @@
                     		<div class="form-group">                    			
                     			<label for="nascimento">Nascimento</label>
                     			<div class="form-control">
-                    			<input type="text" name="dia" id="dia" size="2" maxlength="2" placeholder="dd"> 
-								<input type="text" name="mes" id="mes" size="2" maxlength="2" placeholder="mm"> 
-								<input type="text" name="ano" id="ano" size="4" maxlength="4" placeholder="aaaa">	
+                    			<input type="text" name="dia" id="dia" size="2" maxlength="2" placeholder="dd" required> 
+								<input type="text" name="mes" id="mes" size="2" maxlength="2" placeholder="mm" required> 
+								<input type="text" name="ano" id="ano" size="4" maxlength="4" placeholder="aaaa" required>	
 								</div>						
                     		</div>
                     	</div>
                     	<div class="col">
                     		<div class="form-group">
                     			<label for="cidade">Cidade</label>
-                    			<input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade onde mora">
+                    			<input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade onde mora" required>
                     		</div>
                     	</div>
                     	<div class="col">
@@ -121,13 +121,13 @@
                     	<div class="col">
                     		<div class="form-group">
                         		<label for="endereco">Endereço</label>
-                        		<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua onde mora">
+                        		<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua onde mora" required>
                     		</div>
                     	</div>
                     	<div>
                     		<div>
                     			<label for="numero">Numero</label>
-                    			<input type="text" class="form-control" name="numero" id="numero" placeholder="Numero da casa/apartamento etc">
+                    			<input type="text" class="form-control" name="numero" id="numero" placeholder="Numero da casa/apartamento etc" required>
                     		</div>
                     	</div>
                     </div>	
@@ -135,19 +135,19 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone para contato">
+                                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone para contato" required>
                             </div>
                         </div> 
                         <div class="col">
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail para contato">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail para contato" required>
                             </div>
                         </div> 
                     </div>
                     <div class="form-group">
                         <label for="objetivo">Objetivo</label>
-                        <textarea class="form-control" name="objetivo" id="objetivo" placeholder="Fale sobre você e seu objetivo dentro da empresa"></textarea>
+                        <textarea class="form-control" name="objetivo" id="objetivo" placeholder="Fale sobre você e seu objetivo dentro da empresa" required></textarea>
                     </div>
                 </div>
 
@@ -168,5 +168,8 @@
             </div>
         </form>
     </main> 
+    <footer>
+       <p style="text-align: center;">Copyright © 2018 | José Carlos C. Neto</p>
+    </footer>
 </body>
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Modelo 2 | Simples</title>
     <link rel="stylesheet" href="css/exemplo2.css">
 </head>
 <body>  
-            <!-- <img src="<?= $dados['foto']; ?>" alt="Foto" class="foto">    RETIRE ESSE COMENTARIO PARA APAECER FOTO-->
+           <!--    <img src="<?= $dados['foto']; ?>" alt="Foto" class="foto">  RETIRE ESSE COMENTARIO PARA APAECER FOTO-->
             <h1><?= $dados['nome']; ?></h1>
 
             <div class="dados-usuario">
@@ -13,7 +14,7 @@
                     <li><img src="imagens/email.png" alt="Icone email" height="20" width="20"><?= $dados['email']; ?></li>
                     <li><img src="imagens/telefone.png" alt="Icone telefone" height="20" width="20"><?= $dados['telefone']; ?></li>
                     <li>Nasceu:<?= $dados['dia']; ?>/<?= $dados['mes']; ?>/<?= $dados['ano']; ?></li>
-                    <li><?= $dados['cargo']; ?></li>
+                    <li>Cargo pretendido:<?= $dados['cargo']; ?></li>
                 </ul>
             </div>
         

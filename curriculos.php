@@ -1,6 +1,5 @@
 <?php
 //modelo que o usuario escolheu
-
 $exemplo = $_POST['exemplo'];  
 
 //foto do curriculo
@@ -53,6 +52,5 @@ $dados = array(
                         'fins' =>  $_POST['experiencia-fim'],
                       ) : null 
 );
-
 require_once("modelos/{$exemplo}.php");
 ?>
