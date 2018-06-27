@@ -1,7 +1,7 @@
 <?php
 //modelo que o usuario escolheu
 
-$modelo = $_POST['modelo'];  
+$exemplo = $_POST['exemplo'];  
 
 //foto do curriculo
 if($_FILES['foto']['size'] > 0){
@@ -53,3 +53,6 @@ $dados = array(
                         'fins' =>  $_POST['experiencia-fim'],
                       ) : null 
 );
+
+require_once("modelos/{$exemplo}.php");
+?>

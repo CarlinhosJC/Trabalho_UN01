@@ -21,14 +21,14 @@
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="modelo" id="exemplo1" value="exemplo1" checked> Exemplo 1
+                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo1" value="exemplo1" checked> Exemplo 1 || Moderno
                                 </label>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                 <input class="form-check-input" type="radio" name="modelo" id="exemplo2" value="exemplo2"> Exemplo 2
+                                 <input class="form-check-input" type="radio" name="exemplo" id="exemplo2" value="exemplo2"> Exemplo 2 || Simples
                                 </label>
                             </div>
                         </div>                        
@@ -72,33 +72,33 @@
                     		<div class="form-group">
                     			<label for="estado">Estado:</label>
                     			<select class="form-control" name="estado" id="estado"> 
-							    <option value="ac">Acre</option> 
-							    <option value="al">Alagoas</option> 
-							    <option value="am">Amazonas</option> 
-							    <option value="ap">Amapá</option> 
-							    <option value="ba">Bahia</option> 
-							    <option value="ce">Ceará</option> 
-							    <option value="df">Distrito Federal</option> 
-							    <option value="es">Espírito Santo</option> 
-							    <option value="go">Goiás</option> 
-							    <option value="ma">Maranhão</option> 
-							    <option value="mt">Mato Grosso</option> 
-							    <option value="ms">Mato Grosso do Sul</option> 
-							    <option value="mg">Minas Gerais</option> 
-							    <option value="pa">Pará</option> 
-							    <option value="pb">Paraíba</option> 
-							    <option value="pr">Paraná</option> 
-							    <option value="pe">Pernambuco</option> 
-							    <option value="pi">Piauí</option> 
-							    <option value="rj">Rio de Janeiro</option> 
-							    <option value="rn">Rio Grande do Norte</option> 
-							    <option value="ro">Rondônia</option> 
-							    <option value="rs">Rio Grande do Sul</option> 
-							    <option value="rr">Roraima</option> 
-							    <option value="sc">Santa Catarina</option> 
-							    <option value="se">Sergipe</option> 
-							    <option value="sp">São Paulo</option> 
-							    <option value="to">Tocantins</option> 
+							    <option value="Acre">Acre</option> 
+							    <option value="Alagoas">Alagoas</option> 
+							    <option value="Amazonas">Amazonas</option> 
+							    <option value="Amapá">Amapá</option> 
+							    <option value="Bahia">Bahia</option> 
+							    <option value="Ceará">Ceará</option> 
+							    <option value="DF">Distrito Federal</option> 
+							    <option value="Espírito Santo">Espírito Santo</option> 
+							    <option value="Goiás">Goiás</option> 
+							    <option value="Maranhão">Maranhão</option> 
+							    <option value="Mato Grosso">Mato Grosso</option> 
+							    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option> 
+							    <option value="Minas Gerais">Minas Gerais</option> 
+							    <option value="Pará">Pará</option> 
+							    <option value="Paraíba">Paraíba</option> 
+							    <option value="Paraná">Paraná</option> 
+							    <option value="Pernambuco">Pernambuco</option> 
+							    <option value="Piauí">Piauí</option> 
+							    <option value="Rio de Janeiro">Rio de Janeiro</option> 
+							    <option value="Rio Grande do Norte">Rio Grande do Norte</option> 
+							    <option value="Rondônia">Rondônia</option> 
+							    <option value="Rio Grande do Sul">Rio Grande do Sul</option> 
+							    <option value="Roraima">Roraima</option> 
+							    <option value="Santa Catarina">Santa Catarina</option> 
+							    <option value="Sergipe">Sergipe</option> 
+							    <option value="São Paulo">São Paulo</option> 
+							    <option value="Tocantins">Tocantins</option> 
 							   </select>
                     		</div>
                     	</div>
