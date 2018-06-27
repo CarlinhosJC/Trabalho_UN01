@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Gerador de Currículo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> <link rel="stylesheet" href="css/efeito-hover-index.css">   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
 	
@@ -21,14 +21,14 @@
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo1" value="exemplo1" checked> Exemplo 1 || Moderno
+                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo1" value="exemplo1" checked><img src="imagens/modelo-moderno.png" alt="Modelo 01" width="300" height="200"> Exemplo 1 || Moderno
                                 </label>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                 <input class="form-check-input" type="radio" name="exemplo" id="exemplo2" value="exemplo2"> Exemplo 2 || Simples
+                                    <input class="form-check-input" type="radio" name="exemplo" id="exemplo2" value="exemplo2"><img src="imagens/modelo-simples.png" alt="Modelo 02" width="300" height="200"> Exemplo 2 || Simples
                                 </label>
                             </div>
                         </div>                        

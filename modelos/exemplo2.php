@@ -1,53 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Modelo 01</title>
-    <link rel="stylesheet" href="css/exemplo1.css">
+    <title>Modelo 2 | Simples</title>
+    <link rel="stylesheet" href="css/exemplo2.css">
 </head>
-<body>
-    <main>
-        <section class="perfil">
-            <img src="<?= $dados['foto']; ?>" alt="Foto" class="foto">
+<body>  
+            <!-- <img src="<?= $dados['foto']; ?>" alt="Foto" class="foto">    RETIRE ESSE COMENTARIO PARA APAECER FOTO-->
             <h1><?= $dados['nome']; ?></h1>
-            <div>
+
+            <div class="dados-usuario">
                 <ul>
-                    <li><?= $dados['email']; ?></li>
-                    <li><?= $dados['telefone']; ?></li>
+                    <li><img src="imagens/email.png" alt="Icone email" height="20" width="20"><?= $dados['email']; ?></li>
+                    <li><img src="imagens/telefone.png" alt="Icone telefone" height="20" width="20"><?= $dados['telefone']; ?></li>
                     <li>Nasceu:<?= $dados['dia']; ?>/<?= $dados['mes']; ?>/<?= $dados['ano']; ?></li>
                     <li><?= $dados['cargo']; ?></li>
                 </ul>
             </div>
-        </section>
         
-        <section class="local">        
-            <div>
+        <h2><img src="imagens/endereco.png" alt="Icone endereço" height="20" width="20">Endereço</h2>        
+            <div class="dados-usuario">
                 <ul>
                     <li><?= $dados['endereco']; ?>,<?= $dados['numero']; ?></li>
                     <li><?= $dados['cidade']; ?></li>
                     <li><?= $dados['estado']; ?></li>
                 </ul>
             </div>
-        </section>
-
-        <section class="objetivo">
-            <h2>Objetivos</h2>
-            <div>
+        
+            <h2><img src="imagens/objetivo.png" alt="Icone objetivo" height="20" width="20">Objetivos</h2>
+            <div class="dados-usuario">
                 <ul>
                     <li><?= $dados['objetivo']; ?></li>
                 </ul>
             </div>
-        </section>
-
-        <section>
+        
             <?php if($dados['formacoes']) { ?>
-                <h2>Formação</h2>
+                <h2><img src="imagens/formacao.png" alt="Icone formação" height="20" width="20">Formação</h2>
 
-                <ul class="lista-topicos">
+                <ul>
                     <?php for($i = 0; $i < sizeof($dados['formacoes']['cursos']); $i++) { ?>
-                        <li>
+                        <li class="dados-usuario">
                             <div>
-                                <h4><?= $dados['formacoes']['cursos'][$i] ?></h4>
+                                <h4>---<?= $dados['formacoes']['cursos'][$i] ?>---</h4>
                                 <p><?= $dados['formacoes']['instituicoes'][$i] ?></p>
                                 <p><?= $dados['formacoes']['conclusoes'][$i] ?></p>
                             </div>
@@ -57,22 +50,20 @@
             <?php } ?>
             
             <?php if($dados['experiencias']) { ?>
-                <h2>Experiência</h2>
+                <h2><img src="imagens/experiencia.png" alt="Icone experiencia" height="20" width="20">Experiência</h2>
 
-                <ul class="lista-topicos">
+                <ul>
                     <?php for($i = 0; $i < sizeof($dados['experiencias']['cargos']); $i++) { ?>
-                        <li>
+                        <li class="dados-usuario">
                             <div>
-                                <h4><?= $dados['experiencias']['cargos'][$i] ?></h4>
+                                <h4>---<?= $dados['experiencias']['cargos'][$i] ?>---</h4>
                                 <p><?= $dados['experiencias']['empresas'][$i] ?></p>
                                 <p><?= $dados['experiencias']['inicios'][$i] ?> a <?= $dados['experiencias']['fins'][$i] ?></p>
                             </div>
                         </li>
                     <?php } ?>
                 </ul>
-            <?php } ?>
-        </section>
-
-    </main>
+            <?php } ?>        
+        
 </body>
 </html>

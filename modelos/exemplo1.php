@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Modelo 01</title>
+    <title>Modelo 1 | Moderno</title>
     <link rel="stylesheet" href="css/exemplo1.css">
 </head>
 <body>
